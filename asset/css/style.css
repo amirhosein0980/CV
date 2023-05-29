@@ -1,0 +1,626 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*body*/
+
+body{
+    font-family: IRANSansWeb;
+}
+
+/*container`s*/
+
+.container {
+    width: 1140px;
+    margin: auto;
+}
+
+.container-menu {
+    display: flex;
+    height: 100%;
+}
+
+.container-header-main {
+    height: 90.4%;
+    position: relative;
+    top: 55px;
+    display: flex;
+    color: white;
+}
+
+.container-main-about {
+    height: 100%;
+}
+
+.container-footer {
+    width: 1140px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+
+/*navbar,header*/
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(83deg, purple 0%, orange 100%);
+}
+
+nav {
+    width: 100%;
+    height: 56px;
+    position: fixed;
+    background-image: linear-gradient(83deg, purple 0%, orange 100%);
+    z-index: 999;
+}
+
+.navbar{
+    display: none;
+}
+
+.container ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.container ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 12px;
+    transition: 0.5s;
+}
+
+.container ul li a:hover {
+    color: rgb(34, 34, 34);
+    transition: 0.5s;
+}
+
+.menu {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+}
+
+.logo {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.logo a {
+    transition: 0.5s;
+}
+
+.logo a:hover {
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+.header-main-right {
+    width: 50%;
+    height: 460px;
+    direction: rtl;
+    margin-top: 30px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/close-up-man-writing-code-laptop.jpg");
+    transition: 0.5s;
+    background-size: cover;
+}
+
+.img:hover {
+    transform: scale(1.1);
+}
+
+.img::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+    transition: 0.5s;
+}
+
+.img:hover:after {
+    background-color: transparent;
+}
+
+.header-main-left {
+    width: 50%;
+    height: 100%;
+    direction: rtl;
+    padding: 180px 50px 0 0;
+}
+
+.header-main-left h1 {
+    width: 75%;
+    margin-bottom: 90px;
+    font-weight: 100;
+    font-size: 26px;
+}
+
+.header-main-left h1 span {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.header-main-left p {
+    font-weight: 100;
+    margin-bottom: 40px;
+}
+
+.header-main-left a {
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+    font-weight: 500;
+    padding: 8px 40px;
+    border: 1px white solid;
+    border-radius: 20px;
+    background-color: white;
+    transition: 0.5s;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.header-main-left a:hover {
+    background-color: transparent;
+    color: white;
+    transition: 0.5s;
+}
+
+/*services*/
+
+.main-service {
+    width: 100%;
+    background-color: white;
+    padding: 100px 0 50px 0;
+    direction: rtl;
+}
+
+.main-service-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(34, 34, 41);
+    position: relative;
+}
+
+.main-service-header p {
+    font-weight: 100;
+    color: rgb(163, 140, 145);
+}
+
+.main-service-footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: white;
+    padding: 100px 0;
+}
+
+.main-service-footer-box {
+    width: 49%;
+}
+
+.icon {
+    margin-bottom: 20px;
+}
+
+.information h4 {
+    color: rgb(34, 34, 41);
+    margin-bottom: 20px;
+}
+
+.information p {
+    font-weight: 100;
+    color: rgb(163, 140, 145);
+    margin-bottom: 40px;
+    font-size: 15px;
+}
+
+/*about*/
+
+.main-about-origin {
+    width: 100%;
+    background-color: rgb(249, 249, 255);
+    padding: 100px 0;
+}
+
+.main-about {
+    width: 100%;
+    height: 65%;
+    direction: rtl;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-about-header {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.main-about-header h1 {
+    color: rgb(34, 34, 41);
+}
+
+.main-about-header p {
+    font-weight: 200;
+    color: rgb(163, 140, 145);
+}
+
+.main-about-aside-right {
+    width: 50%;
+    height: 70%;
+    padding-top: 60px;
+}
+
+.main-about-aside-right h3 {
+    margin-bottom: 20px;
+    color: rgb(34, 34, 41);
+}
+
+.main-about-aside-right-main p {
+    color: rgb(163, 140, 145);
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.border {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #bababa;
+    padding: 2px;
+    margin-bottom: 20px;
+}
+
+.main-about-aside-right-main-box1 div div {
+    width: 0;
+    border-radius: 10px;
+    background-image: linear-gradient(83deg, purple 0%, orange 100%);
+    border-color: transparent;
+    height: 10px;
+    transition: 1s;
+}
+
+.main-about-aside-right-main-box1 div:hover div {
+    width: 60%;
+    transition: 1s;
+}
+
+.main-about-aside-right-main-box2 div div {
+    width: 0;
+    border-radius: 10px;
+    background-image: linear-gradient(83deg, purple 0%, orange 100%);
+    border-color: transparent;
+    height: 10px;
+    transition: 1s;
+}
+
+.main-about-aside-right-main-box2 div:hover div {
+    width: 80%;
+    transition: 1s;
+}
+
+.main-about-aside-right-main-box3 div div {
+    width: 0;
+    border-radius: 10px;
+    background-image: linear-gradient(83deg, purple 0%, orange 100%);
+    border-color: transparent;
+    height: 10px;
+    transition: 1s;
+}
+
+.main-about-aside-right-main-box3 div:hover div {
+    width: 70%;
+    transition: 1s;
+}
+
+.main-about-aside-left {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.main-about-aside-left img {
+    width: 350px;
+    height: 350px;
+}
+
+.main-about-aside-left-box1 p {
+    font-weight: 200;
+    color: rgb(163, 140, 145);
+    margin-bottom: 20px;
+}
+
+.main-about-aside-left-box2 p {
+    direction: ltr;
+    font-weight: 200;
+    color: rgb(163, 140, 145);
+    text-align: center;
+}
+
+.main-project {
+    width: 100%;
+    height: 35%;
+    background-color: transparent;
+    direction: rtl;
+    margin-top: 130px;
+}
+
+.main-project-header {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-project-header h1 {
+    color: rgb(34, 34, 41);
+}
+
+.main-project-header p {
+    font-weight: 200;
+    color: rgb(163, 140, 145);
+}
+
+.main-project-main {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-project-box {
+    width: 32%;
+    height: 100%;
+    padding-top: 75px;
+}
+
+.main-project-box h3 {
+    margin-bottom: 20px;
+}
+
+.main-project-box a {
+    text-decoration: none;
+    color: rgb(0, 133, 255);
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.main-project-box a:hover {
+    color: rgb(0, 110, 204);
+    transition: 0.3s;
+}
+
+.main-project-box p {
+    font-weight: 200;
+    font-size: 15.4px;
+}
+
+/*contact*/
+
+.main-contact {
+    width: 100%;
+    height: 707px;
+}
+
+.main-contact-header {
+    direction: rtl;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    color: rgb(34, 34, 41);
+}
+
+.main-contact-header p {
+    color: rgb(163, 140, 145);
+    font-weight: 200;
+}
+
+.main-contact-main {
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    padding-top: 100px;
+}
+
+.main-contact-main-box1 {
+    width: 49%;
+    height: 100%;
+}
+
+.main-contact-main-box1 input {
+    padding: 15px;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    line-height: 1.25;
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    outline: none;
+    transition: 0.2s;
+    font-size: 12px;
+    font-family: IRANSansWeb;
+}
+
+.main-contact-main input:focus {
+    border: 1px solid rgb(0, 133, 255);
+    transition: 0.2s;
+}
+
+.form-control::placeholder {
+    font-family: IRANSansWeb;
+    font-size: 12px;
+}
+
+textarea {
+    outline: none;
+    transition: 0.2s;
+    width: 100%;
+    height: 180px;
+    padding: 7px;
+    resize: none;
+    direction: rtl;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    font-family: IRANSansWeb;
+}
+
+.form-control:focus {
+    border: 1px solid rgb(0, 133, 255);
+    transition: 0.2s;
+}
+
+.main-contact-main-box2 {
+    width: 49%;
+    height: 100%;
+    direction: ltr;
+}
+
+form {
+    direction: rtl;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.main-contact-main-box2 button {
+    line-height: 42px;
+    padding: 0 30px 0 30px;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: IRANSansWeb;
+    background-image: linear-gradient(83deg, purple 0%, orange 100%);
+    direction: rtl;
+}
+
+.main-contact-main-box2 button i {
+    transition: 0.5s;
+    position: relative;
+    left: 0;
+}
+
+.main-contact-main-box2 button:hover i {
+    position: relative;
+    left: 10px;
+    transition: 0.5s;
+}
+
+.bx-left-arrow-alt {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+/*footer right*/
+footer {
+    width: 100%;
+    height: 366px;
+    background-color: rgb(44, 44, 44);
+    direction: rtl;
+}
+
+.footer-aside-right {
+    width: 65%;
+    height: 100%;
+}
+
+.footer-aside-right-header {
+    width: 100%;
+    height: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.footer-aside-right-main {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-top: 100px;
+}
+
+.footer-aside-right-main p {
+    color: rgb(80, 80, 80);
+    font-weight: 200;
+    cursor: default;
+}
+
+/*footer left*/
+
+.footer-aside-left {
+    width: 35%;
+    height: 100%;
+}
+
+.footer-aside-left-header {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    color: white;
+    padding-top: 35px;
+}
+
+.footer-icon {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: 20px;
+}
+
+.bxl-telegram {
+    font-size: 35px;
+    margin-left: 10px;
+    color: white;
+    transition: 0.3s;
+}
+
+.bxl-instagram {
+    font-size: 35px;
+    color: white;
+    transition: 0.3s;
+}
+
+.bxl-telegram:hover, .bxl-instagram:hover {
+    color: rgb(220, 120, 34);
+    transition: 0.3s;
+}
